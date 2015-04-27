@@ -50,4 +50,7 @@ measures_interest_names <- gsub("BodyBody","Body",measures_interest_names)
 names(all) <- c("subject","activity",measures_interest_names)
 
 # 5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
-write.table(all,"tidyData.txt", row.name = FALSE)
+tidy <- aggregate(. ~ subject + activity, all, mean)
+tidy <- tidy[order(tidy$subject),]
+#output
+write.table(tidy,"tidyData.txt", row.name = FALSE)
