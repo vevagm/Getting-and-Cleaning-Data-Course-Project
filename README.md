@@ -23,6 +23,7 @@ The purpose of this project is to demonstrate my ability to collect, work with, 
 - Add column names to the data set. We take the measurement features and replace characters and abbreviations to create more readable and descriptive labels.
 
 ## Outputting:
+- Create an independent tidy data set with the average of each variable aggregated for each activity and each subject
 - Finally save the data set to a text file.
 
 
